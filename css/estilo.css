@@ -1,0 +1,187 @@
+/* Estrutura Site */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 12px, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+}
+
+#container{
+    width: 1080px;
+    margin: 0 auto;
+}
+
+a:link, a:active, a:visited{
+    color: #227115;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4682B4 ;
+}
+
+/* Cabeçalho */
+
+/* Logo */
+header{
+    margin-top: 10px;
+    height: 148px;
+    float: left;
+}
+
+#logo{
+    float: left;
+    height: 80px;
+}
+
+#logo img{
+    float: left;
+}
+
+#logo h1{
+    float: right;
+    text-shadow: 0 0 10px #4682B4;
+    font-size: 1.8em;
+    margin-top: 40px;
+    color: #fff;
+}
+
+/* Barra de pesquisa */
+#pesquisa{
+    float: right;
+}
+
+#pesquisa input{
+    border: none;
+    height: 25px;
+    width: 350px;
+    margin-right: 8px;
+}
+
+/* Navegação */
+nav{
+   float: right; 
+   margin: 50px 0 10px 0;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 8px;
+    float: left;
+}
+
+nav ul li a:link, nav ul li a:active, nav ul li a:visited{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover, a:link.atual-topo , a:active.atual-topo , a:visited.atual-topo{
+    color: #4682B4;
+    border-bottom: 1px solid #535858;
+}
+
+/* Conteudo */
+#conteudo{
+    width: 760px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+article{
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(175, 175, 175);
+}
+
+article p{
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.posts h4{
+    color: #4682B4;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+iframe.video{
+    width: 640px;
+    height: 355px;
+    margin-left: 50px;
+}
+
+ol.lista-ord-conteudo{
+    margin-left: 15px;
+}
+
+#atualizacoes fieldset{
+    padding: 10px;
+}
+
+#nome, #email{
+    height: 20px;
+    width: 200px;
+}
+
+#atualizacoes input{
+    margin-bottom: 10px;
+}
+
+article img{
+    width: 740px;
+}
+
+/* Lateral */
+aside{
+    margin: 10px 0;
+    width: 300px;
+    box-shadow: 0 0 5px rgb(175, 175, 175);
+    float: left;
+}
+
+aside ul{
+    list-style: none;
+    background: #fff;
+}
+
+aside li{
+    border-bottom: 1px solid #535858; 
+    transition: background 0.5s;
+}
+
+aside ul li a:link, aside ul li a:active, aside ul li a:visited{
+    padding: 8px;
+    color: #4682B4;
+    display: block;
+    text-transform: uppercase;
+    transition: padding-left 0.5s;
+}
+
+aside ul li a:hover, a:link.atual-lateral, a:active.atual-lateral , a:visited.atual-lateral{
+    padding-left: 20px;
+    color: #f4f2ec;
+    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+    background: url(../img/marcador.png) no-repeat left center;
+}
+
+/* Rodape */
+footer{
+    clear: both;
+    background: #49433f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
