@@ -5,13 +5,14 @@
 }
 
 body{
-    font: 12px, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: 1em, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background: #f4f2ec url(../img/fundo.png) repeat-x;
 }
 
 #container{
     width: 1080px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 a:link, a:active, a:visited{
@@ -29,7 +30,6 @@ a:hover{
 header{
     margin-top: 10px;
     height: 148px;
-    float: left;
 }
 
 #logo{
@@ -37,15 +37,12 @@ header{
     height: 80px;
 }
 
-#logo img{
-    float: left;
-}
-
 #logo h1{
     float: right;
-    text-shadow: 0 0 10px #4682B4;
+    text-shadow: 0 0 8px #4682B4;
     font-size: 1.8em;
     margin-top: 40px;
+    margin-left: 20px;
     color: #fff;
 }
 
@@ -55,16 +52,22 @@ header{
 }
 
 #pesquisa input{
-    border: none;
+    border-radius: 5px;
     height: 25px;
-    width: 350px;
-    margin-right: 8px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#pesquisa button{
+    border-radius: 5px;
+    width: 30px;
+    height: 25px;
 }
 
 /* Navegação */
 nav{
    float: right; 
-   margin: 50px 0 10px 0;
+   margin-top: 40px;
 }
 
 nav ul{
@@ -83,7 +86,7 @@ nav ul li a:link, nav ul li a:active, nav ul li a:visited{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover, a:link.atual-topo , a:active.atual-topo , a:visited.atual-topo{
@@ -92,15 +95,19 @@ nav ul li a:hover, a:link.atual-topo , a:active.atual-topo , a:visited.atual-top
 }
 
 /* Conteudo */
+#principal{
+    overflow: hidden;
+}
+
 #conteudo{
-    width: 760px;
+    width: 840px;
     float: right;
     margin-bottom: 10px;
 }
 
 article{
     background: #fff;
-    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 10px;
     box-shadow: 0 0 5px rgb(175, 175, 175);
 }
@@ -117,9 +124,9 @@ article p{
 }
 
 iframe.video{
-    width: 640px;
-    height: 355px;
-    margin-left: 50px;
+    width: 760px;
+    height: 400px;
+    margin-left: 30px;
 }
 
 ol.lista-ord-conteudo{
@@ -140,7 +147,22 @@ ol.lista-ord-conteudo{
 }
 
 article img{
-    width: 740px;
+    width: 820px;
+}
+
+/* imagens da pagina laboratorios */
+#laboratorios{
+    overflow: hidden;
+}
+
+#laboratorios p{
+    float: left;
+    width: 500px;
+}
+
+#laboratorios img{
+    width: 300px;
+    float: right;
 }
 
 #link-contato a{
@@ -149,8 +171,7 @@ article img{
 
 /* Lateral */
 aside{
-    margin: 10px 0;
-    width: 300px;
+    width: 220px;
     box-shadow: 0 0 5px rgb(175, 175, 175);
     float: left;
 }
@@ -170,7 +191,7 @@ aside ul li a:link, aside ul li a:active, aside ul li a:visited{
     color: #4682B4;
     display: block;
     text-transform: uppercase;
-    transition: padding-left 0.5s;
+    transition: padding-left 0.3s;
 }
 
 aside ul li a:hover, a:link.atual-lateral, a:active.atual-lateral , a:visited.atual-lateral{
