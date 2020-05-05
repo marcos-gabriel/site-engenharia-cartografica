@@ -6,13 +6,14 @@
 
 body{
     font: 1em, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    background: #f4f2ec;
 }
 
 #container{
-    width: 1080px;
-    margin: 0 auto;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 }
 
 a:link, a:active, a:visited{
@@ -28,30 +29,41 @@ a:hover{
 
 /* Logo */
 header{
-    margin-top: 10px;
-    height: 148px;
+    background: #f4f2ec url(../img/fundo.png);
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #logo{
-    float: left;
-    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #logo h1{
-    float: right;
     text-shadow: 0 0 8px #4682B4;
     font-size: 1.8em;
-    margin-top: 40px;
-    margin-left: 20px;
     color: #fff;
+}
+
+#lateral-topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /* Barra de pesquisa */
 #pesquisa{
-    float: right;
+    margin-bottom: 20px;
 }
 
 #pesquisa input{
+    border: 1px solid white;
     border-radius: 5px;
     height: 25px;
     width: 200px;
@@ -59,26 +71,34 @@ header{
 }
 
 #pesquisa button{
-    border-radius: 5px;
-    width: 30px;
-    height: 25px;
+    border: none;
+    background: transparent;
+}
+
+#pesquisa i{
+    padding: 5px;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+#pesquisa i:hover{
+    color: #4682B4;
+    cursor: pointer;
+    border-color: #4682B4;
+    background: #fff;
+    box-shadow: 0 0 5px #4682B4;
 }
 
 /* Navegação */
-nav{
-   float: right; 
-   margin-top: 40px;
-}
-
 nav ul{
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 nav ul li{
-    margin: 8px;
     float: left;
+    margin: 8px;
 }
 
 nav ul li a:link, nav ul li a:active, nav ul li a:visited{
@@ -96,12 +116,20 @@ nav ul li a:hover, a:link.atual-topo , a:active.atual-topo , a:visited.atual-top
 
 /* Conteudo */
 #principal{
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 #conteudo{
-    width: 840px;
-    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    max-width: 820px;
     margin-bottom: 10px;
 }
 
@@ -124,9 +152,8 @@ article p{
 }
 
 iframe.video{
-    width: 760px;
-    height: 400px;
-    margin-left: 30px;
+    width: 100%;
+    min-height: 300px;
 }
 
 ol.lista-ord-conteudo{
@@ -147,33 +174,42 @@ ol.lista-ord-conteudo{
 }
 
 article img{
-    width: 820px;
+    width: 100%;
 }
 
 /* imagens da pagina laboratorios */
 #laboratorios{
-    overflow: hidden;
-}
-
-#laboratorios p{
-    float: left;
-    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #laboratorios img{
-    width: 300px;
-    float: right;
+    max-width: 300px;
 }
 
+
+/* CONTATOS */
 #link-contato a{
     margin-left: 20px;  
 }
 
+p iframe{
+    width: 100%;
+    min-height: 300px;
+}
+
 /* Lateral */
 aside{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    order: 1;
+    margin-right: 10px;
+    margin-bottom: 10px;
     width: 220px;
-    box-shadow: 0 0 5px rgb(175, 175, 175);
-    float: left;
 }
 
 aside ul{
@@ -203,7 +239,6 @@ aside ul li a:hover, a:link.atual-lateral, a:active.atual-lateral , a:visited.at
 
 /* Rodape */
 footer{
-    clear: both;
     background: #49433f;
     color: #fff;
     text-align: center;
