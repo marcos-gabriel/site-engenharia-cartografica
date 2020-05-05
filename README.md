@@ -1,19 +1,14 @@
 # Site de Engenharia Cartográfica e de Agrimensura
 
-Esse site tem como objetivo treinar meus conhecimentos adquiridos em meu curso de desenvolvimento web.
+Esse site foi construído com o objetivo de treinar os conhecimentos adquiridos em meu curso de Desenvolvimento Web.
 
-A primeira versão desse site foi feita utilizando apenas HTML e CSS:
+A primeira versão (**v1.0**) desse site foi feita utilizando apenas **HTML** e **CSS**, possuindo um *layout fixo*:
 ![Pagina principal](https://raw.githubusercontent.com/marcos-gabriel/site-engenharia-cartografica/master/files/print.PNG)
 
-## Próxima versão
-[![first version]()](https://github.com/marcos-gabriel/site-engenharia-cartografica/releases/tag/v1.0)
-Já na próxima versão será implementada a reponsividade do site, através do [Bootstrap](https://github.com/twbs/bootstrap), para que seja possível o uso em diversos dispositivos,
-como celulares, tablets, notebooks, etc.
-
-### Implementações
-- [x] HTML
-- [x] CSS
-- [ ] MELHORIAS USANDO CSS
-- [ ] RESPONSIVIDADE COM BOOTSTRAP
+## Versões
+- [x] Layout fixo [![first version](https://raw.githubusercontent.com/marcos-gabriel/site-engenharia-cartografica/master/files/version_icon.svg)](https://github.com/marcos-gabriel/site-engenharia-cartografica/releases/tag/v1.0)
+- [ ] Layout responsivo com Flebox
+- [ ] Layout responsivo com Media Queries
+- [ ] Layout responsivo com Bootstrap
 
 [Link do site](https://marcos-gabriel.github.io/site-engenharia-cartografica/index.html)
