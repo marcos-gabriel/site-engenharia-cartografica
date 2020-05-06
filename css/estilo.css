@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
-    font: 1em, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f2ec;
 }
 
@@ -140,12 +145,15 @@ article{
     box-shadow: 0 0 5px rgb(175, 175, 175);
 }
 
-article p{
+.posts p{
+    line-height: 1.5em;
+    font-size: 0.9em;
     text-align: justify;
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .posts h4{
+    font-size: 1.1em;
     color: #4682B4;
     text-transform: uppercase;
     margin-bottom: 5px;
@@ -153,11 +161,11 @@ article p{
 
 iframe.video{
     width: 100%;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 ol.lista-ord-conteudo{
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 #atualizacoes fieldset{
@@ -209,7 +217,7 @@ aside{
     order: 1;
     margin-right: 10px;
     margin-bottom: 10px;
-    width: 220px;
+    width: 230px;
 }
 
 aside ul{
