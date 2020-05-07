@@ -9,6 +9,8 @@ A primeira versão (**v1.0**) desse site foi feita utilizando apenas **HTML** e 
 ![Pagina principal](https://raw.githubusercontent.com/marcos-gabriel/site-engenharia-cartografica/master/files/print.PNG)
 
 
+
+
 - [x] Layout responsivo com Flebox [![second version](https://raw.githubusercontent.com/marcos-gabriel/site-engenharia-cartografica/master/files/version_icon_v2.0.svg)]()
 
 A segunda versão (**v2.0**) desse site foi feita utilizando apenas **HTML** e **CSS**, possuindo um *layout responsivo*, onde foram usados *elementos de Flexbox* e um pouco de *Media Queries*:
@@ -18,6 +20,9 @@ A segunda versão (**v2.0**) desse site foi feita utilizando apenas **HTML** e *
 
 ### Smartphones:
 ![Pagina principal](https://raw.githubusercontent.com/marcos-gabriel/site-engenharia-cartografica/master/files/print_v2.0_phone.png)
+
+
+
 
 - [ ] Layout responsivo com Media Queries
 - [ ] Layout responsivo com Bootstrap
