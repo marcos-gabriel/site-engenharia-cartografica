@@ -2,118 +2,145 @@
 <html lang="pt-br">
     <head>
         <title>História</title>
+        <link rel="icon" type="imagem/png" href="img/logo.png">
+
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+         <!-- HTML5Shiv -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/e94fefc724.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        <script src="https://kit.fontawesome.com/e94fefc724.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="imagem/png" href="img/logo.png">
     </head>
 
     <body>
 
-        <div id="container"> <!-- Início Container -->
-
-            <header> <!-- Início Header -->
-
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png">
-                    </a>
-
-                    <h1>Engenharia Cartográfica e de Agrimensura</h1>
-                </div>
-
-                <div id="lateral-topo">
-                    <div id="pesquisa">
-                        <input type="search" placeholder="Buscar no site">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
-    
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a class="atual-topo" href="historia.html">História</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <header> <!-- Início Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png">     
+                </a>
+                <h1>Engenharia Cartográfica e de Agrimensura</h1>
                 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            </header> <!-- Fim Header -->
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li> 
 
-            <div id="principal"><!-- Início Principal -->
-                
-                <div id="conteudo"><!-- Início Conteudo -->
-                    
-                    <section id="postagem"> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle atual-topo" href="#" id="navbarDropdown1" data-toggle="dropdown">Universidade</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="historia.html">História</a>
+                                <a class="dropdown-item" href="sobre-universidade.html">Sobre a universidade</a>
+                            </div> 
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" data-toggle="dropdown">Curso</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sobre-curso.html">Sobre</a>
+                                <a class="dropdown-item" href="ementa.html">Ementa</a>
+                                <a class="dropdown-item" href="laboratorios.html">Laboratórios</a>
+                            </div> 
+                        </li>
 
-                        <article class="posts">
-                            <h4>História</h4>
-                            <p>
-                                A Universidade Federal Rural da Amazônia (UFRA), como sucessora da Faculdade de Ciências Agrárias do Pará (FCAP), é a mais antiga Instituição de Ensino Superior e de Pesquisa Científica e Tecnológica na área de Ciências Agrárias da região e tem como tema de grande preocupação a preservação da Região Amazônica, assim como sua exploração racional. A Faculdade de Ciências Agrárias do Pará – FCAP foi criada em 1951 como Escola de Agronomia da Amazônia (EAA), quando oferecia apenas o Curso de Graduação em Agronomia. A EAA foi criada para funcionar anexa ao Instituto Agronômico do Norte, criado em 1939, em cujas instalações deveriam coexistir, utilizando equipamentos e outros meios daquela instituição de pesquisa e incluindo as atividades de magistério da escola recém criada como nova atribuição do pessoal técnico do IAN.
-                            </p>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" data-toggle="dropdown">Mídia</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fotos.html">Fotos</a>
+                                <a class="dropdown-item" href="videos.html">Vídeos</a>
+                            </div> 
+                        </li>
 
-                            <p>
-                                O Conselho Federal de Educação, mediante Parecer no 802/71 de 09/11/71, aprovou o funcionamento do Curso de Engenharia Florestal, na Escola de Agronomia da Amazônia, o qual foi autorizado a funcionar pelo Decreto Presidencial no69.786, de 14/12/71. Em 8 de março de 1972, pelo decreto no70.268, passou a denominar-se FACULDADE DE CIÊNCIAS AGRÁRIAS DO PARÁ–FCAP, Estabelecimento Federal de Ensino Superior, constituindo-se unidade isolada, diretamente subordinada ao Departamento de Assuntos Universitários do Ministério da Educação. Posteriormente, através do Decreto no70.686, de 07/06/72, foi transformada em autarquia de regime especial, com mesmo regime jurídico das Universidades, e, portanto, com autonomia didática, disciplinar, financeira e administrativa. Em 16 de março de 1973, o Conselho Federal de Educação aprovou parecer ao projeto de criação do curso de Medicina Veterinária na FCAP, o qual foi autorizado a funcionar através do Decreto no72.217 de 11/5/73. No ano de 1999 foi autorizada a criação do curso de Graduação em Engenharia de Pesca com 30 vagas anuais, pela portaria MEC n°1135 de 20/07/1999 e reconhecido em 2005 pela Portaria MEC n° 3.098 de 09/09/2005. No ano de 2000 foi autorizada a criação do curso de Zootecnia com 30 vagas anuais, pela Portaria MEC n°854 de 21/06/2000 e reconhecido posteriormente pela Portaria MEC n° 3.101 de 09/09/2005.
-                            </p>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
 
-                            <p>
-                                A fase da Pós Graduação iniciou-se em 1976 quando foi implantado o primeiro curso regular de Pós Graduação "Lato Sensu", tendo formado em 17 cursos de especialização em Heveicultura, um total de 425 especialistas. Em 1984, iniciou-se o Mestrado em Agropecuária Tropical e Recursos Hídricos, área de concentração em Manejo de Solos Tropicais, recomendado pela CAPES, o qual foi reestruturado em 1994, criando-se o Programa de Pós- graduação em Agronomia com duas áreas de concentração – Solos e Nutrição Mineral de Plantas e Biologia Vegetal Tropical – e o Programa de Pós-graduação em Ciências Florestais, com área de concentração em Silvicultura e Manejo Florestal. Em março de 2001, numa parceria com a Embrapa Amazônia Oriental, iniciou o Curso de Doutorado em Ciências Agrárias com área de concentração em Sistemas Agroflorestais, recomendado pela CAPES em 2000. Em 2001, a CAPES aprovou a criação do curso de Mestrado em Botânica, em parceria com o Museu Paraense Emílio Goeldi (MPEG), cuja primeira turma foi selecionada em fevereiro de 2002. Ao longo desse período, a FCAP ampliou fortemente sua interação com outras instituições como o MPEG, a UFPA, o CNPq, com a UEPA e o CEFET-PA.
-                            </p>
-
-                            <p>
-                                De 1972 até 1997 a FCAP ofereceu 200 vagas nos concursos vestibulares anuais, sendo 100 para o curso de Agronomia, 50 para Engenharia Florestal e 50 para Medicina Veterinária. O total de vagas foi ampliado em 50% no vestibular de 1998, seguindo a política do MEC, que, em 1994, passara a alocar recursos de custeio e capital (OCC) para as IFES com base no número de alunos matriculados, no número de professores e desempenho acadêmico.
-                            </p>
-
-                            <p>
-                                Em seus 50 anos de existência, essa instituição, a despeito de ter prestado relevantes serviços à região amazônica, destacando-se em especial a formação de milhares de profissionais de Ciências Agrárias, incluindo estrangeiros de mais de 15 países, precisava crescer para continuar sobrevivendo. A trajetória do ensino superior em Ciências Agrárias neste tempo transcorrido estimulou a comunidade universitária a apresentar à sociedade uma proposta de transformação da FCAP em UFRA (Universidade Federal Rural da Amazônia). O pedido de transformação foi sancionado pelo Presidente da República através da Lei 10.611, de 23 de dezembro de 2002, publicada no Diário Oficial da União em 24/12/2002. Dessa forma, a UFRA avançou em suas conquistas durante seu processo de transformação de tal maneira, que tem hoje, em cumprimento ao que exige a legislação, ESTATUTO, REGIMENTO GERAL E PLANO ESTRATÉGICO, concebidos a partir de processos democráticos e participativos, registrando na história desta universidade, um modo cidadão de governar.
-                            </p>
-
-                            <p>
-                                A UFRA é constituída de quatro Institutos Temáticos, que são as unidades responsáveis pela execução do ensino, da pesquisa e da extensão e tem caráter inter, multi e transdisciplinar em áreas do conhecimento. São eles: a) Instituto de Ciências Agrárias; b) Instituto de Saúde e Produção Animal; c) Instituto Socioambiental e dos Recursos Hídricos e d) Instituto Ciberespacial. Os institutos são constituídos por docentes, técnico-administrativos e discentes que nele exercem suas atividades. Cada um dos institutos citados atua em funções relacionadas a seus campos do saber e compactuam entre si o objetivo de ensino, pesquisa e extensão.
-                            </p>
-
-                            <p>
-                                A UFRA conta ainda com o apoio da Fundação de Apoio à Pesquisa, Extensão e Ensino em Ciências Agrárias (FUNPEA), Pessoa Jurídica de Direito Privado, gozando de autonomia patrimonial, financeira e administrativa nos termos da lei e que tem como objetivo apoiar e estimular programas de desenvolvimento sustentado e proteção ao meio ambiente. Fundada em 20 de março de 1997, com sede e foro na cidade de Belém, capital do Estado do Pará, podendo por deliberação do Conselho Curador, estabelecer-se em torno do território nacional.
-                            </p>
-
-                            <p>
-                                Seguindo o planejamento de expansão proposto pela UFRA foram criados quatro campi fora de sede com a adição de mais quatro novos cursos de graduação. São os campi de Paragominas (Agronomia – autorizado pela Portaria MEC n° 945 de 04/08/2008), de Capitão Poço (Agronomia – autorizado pela Portaria MEC n° 945 de 04/08/2008), de Santarém (Engenharia Florestal – autorizado pela Portaria MEC n° 945 de 04/08/2008) e de Parauapebas (Zootecnia – autorizado pela Portaria MEC n° 257 de 24/03/2009). Todos estes cursos estarão entrando com o pedido de reconhecimento ao longo do ano de 2009 e 2010. No campus sede começaram a funcionar os cursos de Informática Agrária e Licenciatura em Computação no ano de 2009.
-                            </p>
-
-                            <p>
-                                Como principal instituição na região a oferecer educação de terceiro grau na área de Ciências Agrárias (Agronomia, Engenharia Florestal, Medicina Veterinária, Engenharia de Pesca e Zootecnia), a UFRA tem um papel a desempenhar no que concerne ao desenvolvimento e implementação de políticas que respondam à demanda da sociedade no setor agrário. Efetivamente, como mão-de-obra qualificada, os diplomados da UFRA são bem representados nas instituições amazônicas de agricultura e ambiente, incluindo órgãos federais, estaduais, municipais e ONGs. Do momento de sua criação até os dias de hoje, em razão da demanda dos estudantes pelas novas habilidades e conhecimentos, a Instituição se aprimorou em estrutura, em renovação curricular e em recursos humanos, todavia, ainda precisa alcançar patamares nunca antes almejados e para isso precisa está sempre se atualizando.
-                            </p>
-
-                            <p>
-                                A localização geográfica da UFRA na Amazônia, com o imenso espaço físico representado por seus campi, por si só, representa um excelente "marketing" institucional, que, associado à interiorização que vem ocorrendo e a uma maior interação com seus ex-alunos permitiriam uma percepção mais abrangente da instituição. Isso poderia resultar numa ampliação das parcerias com outras entidades e uma maior captação de recursos, formando um profissional de melhor qualidade para atender as demandas na área de Ciências Agrárias. Este atendimento exige uma UFRA fortalecida com um nível elevado de satisfação de seus funcionários, tanto os docentes como os técnicos administrativos. Para garantir a sua atuação emergente e o seu bem-estar, é preciso continuar mudando e acreditando na força e na capacidade de se adaptar, inovar e intensificar o seu papel como UNIVERSIDADE.
-                            </p>
-
-                        </article>
-
-                    </section>
-
-                </div><!-- Fim Conteudo -->
-
-                <aside><!-- Início Aside -->
-                    <ul>
-                        <li><a href="sobre-universidade.html">Sobre a universidade</a></li>
-                        <li><a href="sobre-curso.html">Sobre o curso</a></li>
-                        <li><a href="ementa.html">Ementa do curso</a></li>
-                        <li><a href="laboratorios.html">Laboratórios</a></li> 
-                        <li><a href="videos.html">Vídeos</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
-                        <li><a href="desenvolvedor.html">Desenvolvedor</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="desenvolvedor.html">Desenvolvedor</a>
+                        </li>
                     </ul>
-                </aside><!-- Fim Aside -->
+                </div>
+            </nav>
+        </header> <!-- Fim Header -->
 
-            </div><!-- Fim Principal -->
+        <div id="principal"><!-- Início Principal -->
+            
+            <div id="conteudo"><!-- Início Conteudo -->
+                
+                <section id="postagem"> 
 
-        </div> <!-- Fim Container -->
+                    <article class="posts">
+                        <h4>História</h4>
+                        <p>
+                            A Universidade Federal Rural da Amazônia (UFRA), como sucessora da Faculdade de Ciências Agrárias do Pará (FCAP), é a mais antiga Instituição de Ensino Superior e de Pesquisa Científica e Tecnológica na área de Ciências Agrárias da região e tem como tema de grande preocupação a preservação da Região Amazônica, assim como sua exploração racional. A Faculdade de Ciências Agrárias do Pará – FCAP foi criada em 1951 como Escola de Agronomia da Amazônia (EAA), quando oferecia apenas o Curso de Graduação em Agronomia. A EAA foi criada para funcionar anexa ao Instituto Agronômico do Norte, criado em 1939, em cujas instalações deveriam coexistir, utilizando equipamentos e outros meios daquela instituição de pesquisa e incluindo as atividades de magistério da escola recém criada como nova atribuição do pessoal técnico do IAN.
+                        </p>
+
+                        <p>
+                            O Conselho Federal de Educação, mediante Parecer no 802/71 de 09/11/71, aprovou o funcionamento do Curso de Engenharia Florestal, na Escola de Agronomia da Amazônia, o qual foi autorizado a funcionar pelo Decreto Presidencial no69.786, de 14/12/71. Em 8 de março de 1972, pelo decreto no70.268, passou a denominar-se FACULDADE DE CIÊNCIAS AGRÁRIAS DO PARÁ–FCAP, Estabelecimento Federal de Ensino Superior, constituindo-se unidade isolada, diretamente subordinada ao Departamento de Assuntos Universitários do Ministério da Educação. Posteriormente, através do Decreto no70.686, de 07/06/72, foi transformada em autarquia de regime especial, com mesmo regime jurídico das Universidades, e, portanto, com autonomia didática, disciplinar, financeira e administrativa. Em 16 de março de 1973, o Conselho Federal de Educação aprovou parecer ao projeto de criação do curso de Medicina Veterinária na FCAP, o qual foi autorizado a funcionar através do Decreto no72.217 de 11/5/73. No ano de 1999 foi autorizada a criação do curso de Graduação em Engenharia de Pesca com 30 vagas anuais, pela portaria MEC n°1135 de 20/07/1999 e reconhecido em 2005 pela Portaria MEC n° 3.098 de 09/09/2005. No ano de 2000 foi autorizada a criação do curso de Zootecnia com 30 vagas anuais, pela Portaria MEC n°854 de 21/06/2000 e reconhecido posteriormente pela Portaria MEC n° 3.101 de 09/09/2005.
+                        </p>
+
+                        <p>
+                            A fase da Pós Graduação iniciou-se em 1976 quando foi implantado o primeiro curso regular de Pós Graduação "Lato Sensu", tendo formado em 17 cursos de especialização em Heveicultura, um total de 425 especialistas. Em 1984, iniciou-se o Mestrado em Agropecuária Tropical e Recursos Hídricos, área de concentração em Manejo de Solos Tropicais, recomendado pela CAPES, o qual foi reestruturado em 1994, criando-se o Programa de Pós- graduação em Agronomia com duas áreas de concentração – Solos e Nutrição Mineral de Plantas e Biologia Vegetal Tropical – e o Programa de Pós-graduação em Ciências Florestais, com área de concentração em Silvicultura e Manejo Florestal. Em março de 2001, numa parceria com a Embrapa Amazônia Oriental, iniciou o Curso de Doutorado em Ciências Agrárias com área de concentração em Sistemas Agroflorestais, recomendado pela CAPES em 2000. Em 2001, a CAPES aprovou a criação do curso de Mestrado em Botânica, em parceria com o Museu Paraense Emílio Goeldi (MPEG), cuja primeira turma foi selecionada em fevereiro de 2002. Ao longo desse período, a FCAP ampliou fortemente sua interação com outras instituições como o MPEG, a UFPA, o CNPq, com a UEPA e o CEFET-PA.
+                        </p>
+
+                        <p>
+                            De 1972 até 1997 a FCAP ofereceu 200 vagas nos concursos vestibulares anuais, sendo 100 para o curso de Agronomia, 50 para Engenharia Florestal e 50 para Medicina Veterinária. O total de vagas foi ampliado em 50% no vestibular de 1998, seguindo a política do MEC, que, em 1994, passara a alocar recursos de custeio e capital (OCC) para as IFES com base no número de alunos matriculados, no número de professores e desempenho acadêmico.
+                        </p>
+
+                        <p>
+                            Em seus 50 anos de existência, essa instituição, a despeito de ter prestado relevantes serviços à região amazônica, destacando-se em especial a formação de milhares de profissionais de Ciências Agrárias, incluindo estrangeiros de mais de 15 países, precisava crescer para continuar sobrevivendo. A trajetória do ensino superior em Ciências Agrárias neste tempo transcorrido estimulou a comunidade universitária a apresentar à sociedade uma proposta de transformação da FCAP em UFRA (Universidade Federal Rural da Amazônia). O pedido de transformação foi sancionado pelo Presidente da República através da Lei 10.611, de 23 de dezembro de 2002, publicada no Diário Oficial da União em 24/12/2002. Dessa forma, a UFRA avançou em suas conquistas durante seu processo de transformação de tal maneira, que tem hoje, em cumprimento ao que exige a legislação, ESTATUTO, REGIMENTO GERAL E PLANO ESTRATÉGICO, concebidos a partir de processos democráticos e participativos, registrando na história desta universidade, um modo cidadão de governar.
+                        </p>
+
+                        <p>
+                            A UFRA é constituída de quatro Institutos Temáticos, que são as unidades responsáveis pela execução do ensino, da pesquisa e da extensão e tem caráter inter, multi e transdisciplinar em áreas do conhecimento. São eles: a) Instituto de Ciências Agrárias; b) Instituto de Saúde e Produção Animal; c) Instituto Socioambiental e dos Recursos Hídricos e d) Instituto Ciberespacial. Os institutos são constituídos por docentes, técnico-administrativos e discentes que nele exercem suas atividades. Cada um dos institutos citados atua em funções relacionadas a seus campos do saber e compactuam entre si o objetivo de ensino, pesquisa e extensão.
+                        </p>
+
+                        <p>
+                            A UFRA conta ainda com o apoio da Fundação de Apoio à Pesquisa, Extensão e Ensino em Ciências Agrárias (FUNPEA), Pessoa Jurídica de Direito Privado, gozando de autonomia patrimonial, financeira e administrativa nos termos da lei e que tem como objetivo apoiar e estimular programas de desenvolvimento sustentado e proteção ao meio ambiente. Fundada em 20 de março de 1997, com sede e foro na cidade de Belém, capital do Estado do Pará, podendo por deliberação do Conselho Curador, estabelecer-se em torno do território nacional.
+                        </p>
+
+                        <p>
+                            Seguindo o planejamento de expansão proposto pela UFRA foram criados quatro campi fora de sede com a adição de mais quatro novos cursos de graduação. São os campi de Paragominas (Agronomia – autorizado pela Portaria MEC n° 945 de 04/08/2008), de Capitão Poço (Agronomia – autorizado pela Portaria MEC n° 945 de 04/08/2008), de Santarém (Engenharia Florestal – autorizado pela Portaria MEC n° 945 de 04/08/2008) e de Parauapebas (Zootecnia – autorizado pela Portaria MEC n° 257 de 24/03/2009). Todos estes cursos estarão entrando com o pedido de reconhecimento ao longo do ano de 2009 e 2010. No campus sede começaram a funcionar os cursos de Informática Agrária e Licenciatura em Computação no ano de 2009.
+                        </p>
+
+                        <p>
+                            Como principal instituição na região a oferecer educação de terceiro grau na área de Ciências Agrárias (Agronomia, Engenharia Florestal, Medicina Veterinária, Engenharia de Pesca e Zootecnia), a UFRA tem um papel a desempenhar no que concerne ao desenvolvimento e implementação de políticas que respondam à demanda da sociedade no setor agrário. Efetivamente, como mão-de-obra qualificada, os diplomados da UFRA são bem representados nas instituições amazônicas de agricultura e ambiente, incluindo órgãos federais, estaduais, municipais e ONGs. Do momento de sua criação até os dias de hoje, em razão da demanda dos estudantes pelas novas habilidades e conhecimentos, a Instituição se aprimorou em estrutura, em renovação curricular e em recursos humanos, todavia, ainda precisa alcançar patamares nunca antes almejados e para isso precisa está sempre se atualizando.
+                        </p>
+
+                        <p>
+                            A localização geográfica da UFRA na Amazônia, com o imenso espaço físico representado por seus campi, por si só, representa um excelente "marketing" institucional, que, associado à interiorização que vem ocorrendo e a uma maior interação com seus ex-alunos permitiriam uma percepção mais abrangente da instituição. Isso poderia resultar numa ampliação das parcerias com outras entidades e uma maior captação de recursos, formando um profissional de melhor qualidade para atender as demandas na área de Ciências Agrárias. Este atendimento exige uma UFRA fortalecida com um nível elevado de satisfação de seus funcionários, tanto os docentes como os técnicos administrativos. Para garantir a sua atuação emergente e o seu bem-estar, é preciso continuar mudando e acreditando na força e na capacidade de se adaptar, inovar e intensificar o seu papel como UNIVERSIDADE.
+                        </p>
+
+                    </article>
+
+                </section>
+
+            </div><!-- Fim Conteudo -->
+
+        </div><!-- Fim Principal -->
 
         <footer>
             Av. Tancredo Neves, nº 2501 – Terra Firme – Cep: 66.077-830 – Belém-PA  
         </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>

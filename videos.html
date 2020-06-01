@@ -2,97 +2,127 @@
 <html lang="pt-br">
     <head>
         <title>Vídeos</title>
+        <link rel="icon" type="imagem/png" href="img/logo.png">
+
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+         <!-- HTML5Shiv -->
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <![endif]-->
+        
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/e94fefc724.js" crossorigin="anonymous"></script>
 
         <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        <script src="https://kit.fontawesome.com/e94fefc724.js" crossorigin="anonymous"></script>
-        <link rel="icon" type="imagem/png" href="img/logo.png">
     </head>
 
     <body>
 
-        <div id="container"> <!-- Início Container -->
+        
 
-            <header> <!-- Início Header -->
-
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png">
-                    </a>
-
-                    <h1>Engenharia Cartográfica e de Agrimensura</h1>
-                </div>
-
-                <div id="lateral-topo">
-                    <div id="pesquisa">
-                        <input type="search" placeholder="Buscar no site">
-                        <button><i class="fas fa-search"></i></button>
-                    </div>
-    
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="historia.html">História</a></li>
-                            <li><a href="contato.html">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-            </header> <!-- Fim Header -->
-
-            <div id="principal"><!-- Início Principal -->
+        <header> <!-- Início Header -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.png">     
+                </a>
+                <h1>Engenharia Cartográfica e de Agrimensura</h1>
                 
-                <div id="conteudo"><!-- Início Conteudo -->
-                    
-                    <section id="postagem"> 
-                        <article class="posts">
-                            <h4>Engenharia Cartográfica e de Agrimensura</h4>
-                            <p>Abaixo encontra-se um vídeo do curso de Engenharia Cartográfica e de Agrimensura da UFPR (vídeo da Ufra em produção):</p>
-                            
-                            <iframe class="video" src="https://www.youtube.com/embed/AXQW9cKQw7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </article>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        <article class="posts">
-                            <h4>trabalho do engenheiro agrimensor</h4>
-                            
-                            <iframe class="video" src="https://www.youtube.com/embed/UBhg6ys0WA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </article>
+                <div class="collapse navbar-collapse" id="nav-principal">
+                    <ul class="navbar-nav ml-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li> 
 
-                        <article class="posts">
-                            <h4>Levantamento aerofotogramétrico</h4>
-                            
-                            <iframe class="video" src="https://www.youtube.com/embed/FrKMhmKJNBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </article>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" data-toggle="dropdown">Universidade</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="historia.html">História</a>
+                                <a class="dropdown-item" href="sobre-universidade.html">Sobre a universidade</a>
+                            </div> 
+                        </li>
                         
-                        <article class="posts">
-                            <h4>Levantamento topográfico</h4>
-                            
-                            <iframe class="video" src="https://www.youtube.com/embed/qF7iKFxazKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </article>
-                        
-                    </section>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" data-toggle="dropdown">Curso</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="sobre-curso.html">Sobre</a>
+                                <a class="dropdown-item" href="ementa.html">Ementa</a>
+                                <a class="dropdown-item" href="laboratorios.html">Laboratórios</a>
+                            </div> 
+                        </li>
 
-                </div><!-- Fim Conteudo -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle atual-topo" href="#" id="navbarDropdown3" data-toggle="dropdown">Mídia</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="fotos.html">Fotos</a>
+                                <a class="dropdown-item" href="videos.html">Vídeos</a>
+                            </div> 
+                        </li>
 
-                <aside><!-- Início Aside -->
-                    <ul>
-                        <li><a href="sobre-universidade.html">Sobre a universidade</a></li>
-                        <li><a href="sobre-curso.html">Sobre o curso</a></li>
-                        <li><a href="ementa.html">Ementa do curso</a></li>
-                        <li><a href="laboratorios.html">Laboratórios</a></li> 
-                        <li><a class="atual-lateral" href="videos.html">Vídeos</a></li>
-                        <li><a href="fotos.html">Fotos</a></li>
-                        <li><a href="desenvolvedor.html">Desenvolvedor</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="desenvolvedor.html">Desenvolvedor</a>
+                        </li>
                     </ul>
-                </aside><!-- Fim Aside -->
+                </div>
+            </nav>
+        </header> <!-- Fim Header -->
 
-            </div><!-- Fim Principal -->
+        <div id="principal"><!-- Início Principal -->
+            
+            <div id="conteudo"><!-- Início Conteudo -->
+                
+                <section id="postagem"> 
+                    <article class="posts">
+                        <h4>Engenharia Cartográfica e de Agrimensura</h4>
+                        <p>Abaixo encontra-se um vídeo do curso de Engenharia Cartográfica e de Agrimensura da UFPR (vídeo da Ufra em produção):</p>
+                        
+                        <iframe class="video" src="https://www.youtube.com/embed/AXQW9cKQw7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
 
-        </div> <!-- Fim Container -->
+                    <article class="posts">
+                        <h4>trabalho do engenheiro agrimensor</h4>
+                        
+                        <iframe class="video" src="https://www.youtube.com/embed/UBhg6ys0WA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+
+                    <article class="posts">
+                        <h4>Levantamento aerofotogramétrico</h4>
+                        
+                        <iframe class="video" src="https://www.youtube.com/embed/FrKMhmKJNBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    
+                    <article class="posts">
+                        <h4>Levantamento topográfico</h4>
+                        
+                        <iframe class="video" src="https://www.youtube.com/embed/qF7iKFxazKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </article>
+                    
+                </section>
+
+            </div><!-- Fim Conteudo -->
+
+        </div><!-- Fim Principal -->
 
         <footer>
             Av. Tancredo Neves, nº 2501 – Terra Firme – Cep: 66.077-830 – Belém-PA  
         </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>

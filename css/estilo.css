@@ -1,16 +1,7 @@
 /* Estrutura Site */
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 16px;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 a:link, a:active, a:visited{
@@ -23,86 +14,26 @@ a:hover{
 }
 
 /* Logo */
-header{
-    background:#2A271E;
-    display: flex;
-    flex-wrap: wrap;
+.navbar img {
+    width: 40px;
 }
 
-#logo{
-    display: flex;
-    flex: 70%;
-    align-items: center;
-}
-
-#logo h1{
+.navbar h1{
     text-shadow: 0 0 5px #4682B4;
-    font-size: 1.8em;
     color: #fff;
-}
-
-#lateral-topo{
-    display: flex;
-    flex: 30%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    margin-top: 10px;
-}
-
-/* Barra de pesquisa */
-#pesquisa{
-    margin-right: 5px;
-}
-
-#pesquisa input{
-    border: 1px solid white;
-    border-radius: 5px;
-    height: 25px;
-    width: 200px;
-    padding-left: 10px;
-}
-
-#pesquisa button{
-    border: none;
-    background: transparent;
-}
-
-#pesquisa i{
-    padding: 5px;
-    color: #fff;
-    border: 1px solid white;
-    border-radius: 15px;
-    transition: 0.3s;
-}
-
-#pesquisa i:hover{
-    color: #4682B4;
-    cursor: pointer;
-    border-color: #4682B4;
-    background: #fff;
-    box-shadow: 0 0 5px #4682B4;
+    font-size: 1em;
 }
 
 /* Navegação */
-nav ul{
-    display: flex;
-    list-style: none;
-    padding: 8px 5px;
-}
-
-nav ul li{
-    padding: 8px 5px;
-}
-
 nav ul li a:link, nav ul li a:active, nav ul li a:visited{
-    color: white;
-    text-transform: uppercase;
-    transition: color 0.3s;
+    color: #4682B4;
+}
+
+.dropdown-item:hover {
+    color: rgb(2, 66, 119);
 }
 
 nav ul li a:hover, a:link.atual-topo , a:active.atual-topo , a:visited.atual-topo{
-    color: #4682B4;
     border-bottom: 1px solid #535858;
 }
 
@@ -187,49 +118,8 @@ article img{
     margin-bottom: 20px;
 }
 
-#link-contato{
-    text-align: center;
-}
-
-#link-contato img{
-    width: 10%;
-    margin-left: 10px;
-}
-
 #mapa{
     width: 100%;
-}
-
-/* Lateral */
-aside{
-    flex: 30%;
-    order: 1;
-    background: #f4f2ec;
-}
-
-aside ul{
-    list-style: none;
-    background: #f4f2ec;
-}
-
-aside li{
-    border-bottom: 1px solid #535858; 
-    transition: background 0.5s;
-}
-
-aside ul li a:link, aside ul li a:active, aside ul li a:visited{
-    padding: 8px;
-    color: #4682B4;
-    display: block;
-    text-transform: uppercase;
-    transition: padding-left 0.3s;
-}
-
-aside ul li a:hover, a:link.atual-lateral, a:active.atual-lateral , a:visited.atual-lateral{
-    padding-left: 20px;
-    color: white;
-    text-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
-    background: url(../img/marcador.png) no-repeat left center;
 }
 
 /* Rodape */
@@ -240,21 +130,22 @@ footer{
     padding: 10px;
 }
 
-@media screen and (max-width: 700px){
-    #logo{
-        flex-direction: column;
-        text-align: center;
-    }
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 768px) {
+   
+}
 
-    #lateral-topo{
-        align-items: center;
-    }
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    
+}
 
-    #principal{
-        flex-direction: column;
-    }
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
 
-    aside ul{
-        text-align: center;
-    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
 }
