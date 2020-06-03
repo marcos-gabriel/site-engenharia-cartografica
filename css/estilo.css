@@ -115,6 +115,10 @@ footer{
     #mapa{
         height: 300px;
     }
+
+    .navbar h1 {
+        font-size: 0.8em;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -126,11 +130,16 @@ footer{
     #mapa{
         height: 400px;
     }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     iframe.video{
         min-height: 400px;
+    }
+
+    .navbar h1 {
+        font-size: 1.5em;
     }
 }
